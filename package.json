@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gitbook build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["doc"],
+  "author": "zechengdai",
   "license": "MIT"
 }

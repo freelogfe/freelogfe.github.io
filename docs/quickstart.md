@@ -5,6 +5,7 @@
 - 运行环境
     - 高级现代浏览器
     - [nodejs](https://nodejs.org/en/)
+- 运行环境：高级现代浏览器
 
 ## 安装
 安装freelog-cli，[freelog-cli](https://github.com/freelogfe/freelog-cli)有freelog提供的用于开发的命令行工具集

@@ -14,6 +14,9 @@ $ npm run dev
 html是渲染到shadow dom中，再挂载到页面上，所以无法从document.body直接querySelector找到widget的dom内容。
 
 
+
+### html
+>>>>>>> 08cbe0ecb8054c4f299ed6806f85fb1b4c6da21e
 输出hello freelog
 
 打开``src/app/index.html`，添加如下代码

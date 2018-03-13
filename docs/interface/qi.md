@@ -3,13 +3,16 @@
 > freelog提供的查询接口，可通过window.QI调用
 
 ## fetch
-``window.QI.fetch(target[, params])`` 对window.fetch的封装
+
+``window.QI.fetch(target[, params])`` 对window.fetch的封装，所有请求最后都可以通过这个接口进行发送
 
 ## fetchResource
-``window.QI.fetchResource(resourceId[, params])`` 获取免授权的资源数据，比如license
+``window.QI.fetchResource(resourceId[, params])`` 获取资源数据
 
-## fetchPresentableData
-``window.QI.fetchPresentableData(target[, params])``  获取presentable数据内容
+## fetchPresentable
+``window.QI.fetchPresentable(presentableId[, params])``  获取presentable数据，可通过extName获取不同的数据类型
 
-## fetchPresentableInfo
-``window.QI.fetchPresentable(target[, params])``  获取presentable详情信息
+|extName值|extName说明|
+| --- | --- |
+|[empty]|	系统直接返回当前presentable对应的resource基础信息|
+|data|	系统直接返回当前presnetable对应的resource文件,即创建资源时上传的文件

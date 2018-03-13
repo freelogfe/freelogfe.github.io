@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>proxy配置 · freelog组件开发</title>
+        <title>Query Interface · freelog组件开发</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -64,6 +64,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="qi.html" />
     
     
 
@@ -204,9 +206,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../interface/qi.html">
+        <li class="chapter active" data-level="1.5.1" data-path="qi.html">
             
-                <a href="../interface/qi.html">
+                <a href="qi.html">
             
                     
                     Query Interface
@@ -218,9 +220,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1.1" data-path="../interface/qi.html">
+        <li class="chapter " data-level="1.5.1.1" data-path="qi.html">
             
-                <a href="../interface/qi.html#fetch">
+                <a href="qi.html#fetch">
             
                     
                     fetch
@@ -231,9 +233,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.1.2" data-path="../interface/qi.html">
+        <li class="chapter " data-level="1.5.1.2" data-path="qi.html">
             
-                <a href="../interface/qi.html#fetchResource">
+                <a href="qi.html#fetchResource">
             
                     
                     fetchResource
@@ -244,12 +246,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.1.3" data-path="../interface/qi.html">
+        <li class="chapter " data-level="1.5.1.3" data-path="qi.html">
             
-                <a href="../interface/qi.html#fetchPresentable">
+                <a href="qi.html#fetchPresentableData">
             
                     
-                    fetchPresentable
+                    fetchPresentableData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="qi.html">
+            
+                <a href="qi.html#fetchPresentableInfo">
+            
+                    
+                    fetchPresentableInfo
             
                 </a>
             
@@ -326,9 +341,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="proxy.html">
+        <li class="chapter " data-level="1.6.1" data-path="../advanced/proxy.html">
             
-                <a href="proxy.html">
+                <a href="../advanced/proxy.html">
             
                     
                     proxy配置
@@ -374,7 +389,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >proxy配置</a>
+        <a href=".." >Query Interface</a>
     </h1>
 </div>
 
@@ -389,9 +404,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#proxy&#x914D;&#x7F6E;"><b></b>proxy&#x914D;&#x7F6E;</a></li></ul></div><a href="#proxy&#x914D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="proxy&#x914D;&#x7F6E;"><a name="proxy&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#proxy&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>proxy&#x914D;&#x7F6E;</h1>
-<p>server&#x91CC;&#x7684;proxy&#x914D;&#x7F6E;</p>
-<p><a href="https://www.npmjs.com/package/http-proxy-middleware" target="_blank">&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x8BE6;&#x60C5;&#x67E5;&#x770B;</a></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#query-interface"><b></b>Query Interface</a></li><ul><li><span class="title-icon "></span><a href="#fetch"><b></b>fetch</a></li><li><span class="title-icon "></span><a href="#fetchresource"><b></b>fetchResource</a></li><li><span class="title-icon "></span><a href="#fetchpresentabledata"><b></b>fetchPresentableData</a></li><li><span class="title-icon "></span><a href="#fetchpresentableinfo"><b></b>fetchPresentableInfo</a></li></ul></ul></div><a href="#query-interface" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="query-interface"><a name="query-interface" class="anchor-navigation-ex-anchor" href="#query-interface"><i class="fa fa-link" aria-hidden="true"></i></a>Query Interface</h1>
+<blockquote>
+<p>freelog&#x63D0;&#x4F9B;&#x7684;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;window.QI&#x8C03;&#x7528;</p>
+</blockquote>
+<h2 id="fetch"><a name="fetch" class="anchor-navigation-ex-anchor" href="#fetch"><i class="fa fa-link" aria-hidden="true"></i></a>fetch</h2>
+<p><code>window.QI.fetch(target[, params])</code> &#x5BF9;window.fetch&#x7684;&#x5C01;&#x88C5;</p>
+<h2 id="fetchresource"><a name="fetchresource" class="anchor-navigation-ex-anchor" href="#fetchresource"><i class="fa fa-link" aria-hidden="true"></i></a>fetchResource</h2>
+<p><code>window.QI.fetchResource(resourceId[, params])</code> &#x83B7;&#x53D6;&#x514D;&#x6388;&#x6743;&#x7684;&#x8D44;&#x6E90;&#x6570;&#x636E;&#xFF0C;&#x6BD4;&#x5982;license</p>
+<h2 id="fetchpresentabledata"><a name="fetchpresentabledata" class="anchor-navigation-ex-anchor" href="#fetchpresentabledata"><i class="fa fa-link" aria-hidden="true"></i></a>fetchPresentableData</h2>
+<p><code>window.QI.fetchPresentableData(target[, params])</code>  &#x83B7;&#x53D6;presentable&#x6570;&#x636E;&#x5185;&#x5BB9;</p>
+<h2 id="fetchpresentableinfo"><a name="fetchpresentableinfo" class="anchor-navigation-ex-anchor" href="#fetchpresentableinfo"><i class="fa fa-link" aria-hidden="true"></i></a>fetchPresentableInfo</h2>
+<p><code>window.QI.fetchPresentable(target[, params])</code>  &#x83B7;&#x53D6;presentable&#x8BE6;&#x60C5;&#x4FE1;&#x606F;</p>
 
                                 
                                 </section>
@@ -420,6 +444,10 @@
             
                 
                 
+                <a href="qi.html#fetch" class="navigation navigation-next navigation-unique" aria-label="Next page: fetch">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -427,7 +455,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"proxy配置","level":"1.6.1","depth":2,"previous":{"title":"高级","level":"1.6","depth":1,"ref":"","articles":[{"title":"proxy配置","level":"1.6.1","depth":2,"path":"advanced/proxy.md","ref":"advanced/proxy.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","anchor-navigation-ex","fontsettings","highlight","livereload"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":false},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zechengdai <daizech@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0"},"title":"freelog组件开发","gitbook":"*","description":"freelog widget开发文档"},"file":{"path":"advanced/proxy.md","mtime":"2018-02-07T14:00:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T07:55:47.338Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Query Interface","level":"1.5.1","depth":2,"next":{"title":"fetch","level":"1.5.1.1","depth":3,"anchor":"#fetch","path":"interface/qi.md","ref":"interface/qi.md#fetch","articles":[]},"previous":{"title":"API文档","level":"1.5","depth":1,"ref":"","articles":[{"title":"Query Interface","level":"1.5.1","depth":2,"path":"interface/qi.md","ref":"interface/qi.md","articles":[{"title":"fetch","level":"1.5.1.1","depth":3,"anchor":"#fetch","path":"interface/qi.md","ref":"interface/qi.md#fetch","articles":[]},{"title":"fetchResource","level":"1.5.1.2","depth":3,"anchor":"#fetchResource","path":"interface/qi.md","ref":"interface/qi.md#fetchResource","articles":[]},{"title":"fetchPresentableData","level":"1.5.1.3","depth":3,"anchor":"#fetchPresentableData","path":"interface/qi.md","ref":"interface/qi.md#fetchPresentableData","articles":[]},{"title":"fetchPresentableInfo","level":"1.5.1.4","depth":3,"anchor":"#fetchPresentableInfo","path":"interface/qi.md","ref":"interface/qi.md#fetchPresentableInfo","articles":[]}]},{"title":"UI实例","level":"1.5.2","depth":2,"path":"ui/instance.md","ref":"ui/instance.md","articles":[{"title":"events","level":"1.5.2.1","depth":3,"anchor":"#events","path":"ui/instance.md","ref":"ui/instance.md#events","articles":[]},{"title":"ExceptionCode","level":"1.5.2.2","depth":3,"anchor":"#ExceptionCode","path":"ui/instance.md","ref":"ui/instance.md#ExceptionCode","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","anchor-navigation-ex","fontsettings","highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zechengdai <daizech@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0"},"title":"freelog组件开发","gitbook":"*","description":"freelog widget开发文档"},"file":{"path":"interface/qi.md","mtime":"2018-02-08T03:34:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-08T03:37:35.121Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -438,10 +466,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

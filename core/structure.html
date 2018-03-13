@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>proxy配置 · freelog组件开发</title>
+        <title>目录结构 · freelog组件开发</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,6 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="development.html" />
+    
+    
+    <link rel="prev" href="development.html" />
     
 
     </head>
@@ -119,9 +123,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../core/development.html">
+        <li class="chapter " data-level="1.3" data-path="development.html">
             
-                <a href="../core/development.html">
+                <a href="development.html">
             
                     
                     本地开发
@@ -133,9 +137,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../core/structure.html">
+        <li class="chapter active" data-level="1.3.1" data-path="structure.html">
             
-                <a href="../core/structure.html">
+                <a href="structure.html">
             
                     
                     目录结构
@@ -146,9 +150,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../core/development.html">
+        <li class="chapter " data-level="1.3.2" data-path="development.html">
             
-                <a href="../core/development.html">
+                <a href="development.html">
             
                     
                     组件开发
@@ -159,9 +163,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../core/pagebuild.html">
+        <li class="chapter " data-level="1.3.3" data-path="pagebuild.html">
             
-                <a href="../core/pagebuild.html">
+                <a href="pagebuild.html">
             
                     
                     自定义pagebuild
@@ -177,9 +181,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../core/deployment.html">
+        <li class="chapter " data-level="1.4" data-path="deployment.html">
             
-                <a href="../core/deployment.html">
+                <a href="deployment.html">
             
                     
                     发布
@@ -246,10 +250,23 @@
     
         <li class="chapter " data-level="1.5.1.3" data-path="../interface/qi.html">
             
-                <a href="../interface/qi.html#fetchPresentable">
+                <a href="../interface/qi.html#fetchPresentableData">
             
                     
-                    fetchPresentable
+                    fetchPresentableData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="../interface/qi.html">
+            
+                <a href="../interface/qi.html#fetchPresentableInfo">
+            
+                    
+                    fetchPresentableInfo
             
                 </a>
             
@@ -326,9 +343,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="proxy.html">
+        <li class="chapter " data-level="1.6.1" data-path="../advanced/proxy.html">
             
-                <a href="proxy.html">
+                <a href="../advanced/proxy.html">
             
                     
                     proxy配置
@@ -374,7 +391,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >proxy配置</a>
+        <a href=".." >目录结构</a>
     </h1>
 </div>
 
@@ -389,9 +406,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#proxy&#x914D;&#x7F6E;"><b></b>proxy&#x914D;&#x7F6E;</a></li></ul></div><a href="#proxy&#x914D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="proxy&#x914D;&#x7F6E;"><a name="proxy&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#proxy&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>proxy&#x914D;&#x7F6E;</h1>
-<p>server&#x91CC;&#x7684;proxy&#x914D;&#x7F6E;</p>
-<p><a href="https://www.npmjs.com/package/http-proxy-middleware" target="_blank">&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x8BE6;&#x60C5;&#x67E5;&#x770B;</a></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><b></b>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a></li></ul></div><a href="#&#x76EE;&#x5F55;&#x7ED3;&#x6784;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><a name="&#x76EE;&#x5F55;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h1>
+<pre><code class="lang-bash">.
+&#x251C;&#x2500;&#x2500; .editorconfig   <span class="hljs-comment"># &#x7F16;&#x8F91;&#x5668;&#x7F29;&#x8FDB;&#x8BBE;&#x7F6E;</span>
+&#x251C;&#x2500;&#x2500; .gitignore  
+&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; build   <span class="hljs-comment">#&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+&#x2502;   &#x251C;&#x2500;&#x2500; dev-server.js
+&#x2502;   &#x2514;&#x2500;&#x2500; gulpfile.js
+&#x251C;&#x2500;&#x2500; config  <span class="hljs-comment">#&#x9879;&#x76EE;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+&#x2502;   &#x251C;&#x2500;&#x2500; dev.env.js
+&#x2502;   &#x251C;&#x2500;&#x2500; index.js
+&#x2502;   &#x2514;&#x2500;&#x2500; prod.env.js
+&#x251C;&#x2500;&#x2500; package.json    <span class="hljs-comment"># scripts&#x548C;freelogConfig&#x914D;&#x7F6E;</span>
+&#x251C;&#x2500;&#x2500; src
+&#x2502;   &#x251C;&#x2500;&#x2500; app <span class="hljs-comment"># main freelog component</span>
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; index.css <span class="hljs-comment">#&#x53EF;&#x9009;</span>
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; index.html
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; index.js <span class="hljs-comment">#&#x53EF;&#x9009;</span>
+&#x2502;   &#x2514;&#x2500;&#x2500; pagebuild.html  <span class="hljs-comment">#&#x672C;&#x5730;&#x5F00;&#x53D1;&#x7684;pagebuild&#x5BB9;&#x5668;</span>
+&#x2514;&#x2500;&#x2500; <span class="hljs-built_in">test</span>
+</code></pre>
+<p><code>src/app</code>
+freelog&#x7EC4;&#x4EF6;&#x7684;&#x5F00;&#x53D1;&#x76EE;&#x5F55;&#xFF0C;&#x5BF9;&#x5E94;&#x5F53;&#x524D;&#x5F00;&#x53D1;&#x4E2D;&#x7684;web component&#x7684;html&#x6587;&#x4EF6;&#x3002;</p>
+<p><code>pagebuild</code>
+pagebuild&#x5BB9;&#x5668;&#xFF0C;&#x5916;&#x5C42;&#x6846;&#x67B6;&#x4F1A;&#x5BF9;pagebuild&#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x91CC;&#x53EF;&#x81EA;&#x5B9A;&#x4E49;pagebuild&#x7528;&#x4E8E;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x3002;&#x6CE8;&#x610F;&#x6B64;&#x6587;&#x4EF6;&#x4EC5;&#x7528;&#x4E8E;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x4F7F;&#x7528;</p>
+<p><code>package.json</code>
+packge.json&#x4E2D;&#x65B0;&#x589E;freelog&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;&#x3002;&#x53EF;&#x901A;&#x8FC7;&#x6B64;&#x914D;&#x7F6E;&#x5B9A;&#x4E49;&#x8D44;&#x6E90;&#x7C7B;&#x578B;&#x548C;&#x8D44;&#x6E90;&#x7684;meta&#x4FE1;&#x606F;</p>
+<pre><code class="lang-json">{
+ <span class="hljs-string">&quot;freelogConfig&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;widget&quot;</span>,
+    <span class="hljs-string">&quot;meta&quot;</span>: {}
+  }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -419,6 +467,14 @@
 
             
                 
+                <a href="development.html" class="navigation navigation-prev " aria-label="Previous page: 本地开发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="development.html" class="navigation navigation-next " aria-label="Next page: 组件开发">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -427,7 +483,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"proxy配置","level":"1.6.1","depth":2,"previous":{"title":"高级","level":"1.6","depth":1,"ref":"","articles":[{"title":"proxy配置","level":"1.6.1","depth":2,"path":"advanced/proxy.md","ref":"advanced/proxy.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","anchor-navigation-ex","fontsettings","highlight","livereload"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":false},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zechengdai <daizech@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0"},"title":"freelog组件开发","gitbook":"*","description":"freelog widget开发文档"},"file":{"path":"advanced/proxy.md","mtime":"2018-02-07T14:00:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T07:55:47.338Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"目录结构","level":"1.3.1","depth":2,"next":{"title":"组件开发","level":"1.3.2","depth":2,"path":"core/development.md","ref":"core/development.md","articles":[]},"previous":{"title":"本地开发","level":"1.3","depth":1,"path":"core/development.md","ref":"core/development.md","articles":[{"title":"目录结构","level":"1.3.1","depth":2,"path":"core/structure.md","ref":"core/structure.md","articles":[]},{"title":"组件开发","level":"1.3.2","depth":2,"path":"core/development.md","ref":"core/development.md","articles":[]},{"title":"自定义pagebuild","level":"1.3.3","depth":2,"path":"core/pagebuild.md","ref":"core/pagebuild.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","anchor-navigation-ex","fontsettings","highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zechengdai <daizech@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0"},"title":"freelog组件开发","gitbook":"*","description":"freelog widget开发文档"},"file":{"path":"core/structure.md","mtime":"2018-02-07T08:05:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-08T03:37:35.121Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -438,10 +494,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

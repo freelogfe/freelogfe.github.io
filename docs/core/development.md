@@ -8,18 +8,13 @@ $ npm run dev
 启动后可访问[http://local.freelog.com:9001](http://local.freelog.com:9001)
 
 ## 代码开发
-基于[web component](https://developers.google.com/web/fundamentals/web-components/shadowdom?hl=zh-cn)开发
+基于[web component](https://developers.google.com/web/fundamentals/web-components/shadowdom?hl=zh-cn)规范进行开发
+
 
 ### html
 html是渲染到shadow dom中，再挂载到页面上，所以无法从document.body直接querySelector找到widget的dom内容。
 
-
-
-### html
->>>>>>> 08cbe0ecb8054c4f299ed6806f85fb1b4c6da21e
-输出hello freelog
-
-打开``src/app/index.html`，添加如下代码
+尝试输出点东西，打开``src/app/index.html`，添加如下代码
 ```html
   <div class="wrapper">
     <!--your codes here-->
@@ -54,7 +49,6 @@ html是渲染到shadow dom中，再挂载到页面上，所以无法从document.
    render() {
       this.root.querySelector('.wrapper').innerHTML = '<p>hello freelog</p>'
    }
-   
 }
 ```
 

@@ -1,42 +1,67 @@
 # 目录结构
+在快速开始中，可通过freelog-cli会生成不同的组件开发项目，接下来我们简单了解下其目录约定规范。
 
+`基于普通组件开发模版生产的目录结构`
 ```bash
 .
-├── .editorconfig   # 编辑器缩进设置
-├── .gitignore  
 ├── README.md
-├── build   #构建配置文件
+├── build
+│   ├── build.js
 │   ├── dev-server.js
-│   └── gulpfile.js
-├── config  #项目配置文件
+│   ├── webpack.base.conf.js
+│   ├── webpack.dev.conf.js
+│   └── webpack.prod.conf.js
+├── config
 │   ├── dev.env.js
 │   ├── index.js
 │   └── prod.env.js
-├── package.json    # scripts和freelogConfig配置
-├── src
-│   ├── app # main freelog component
-│   │   ├── index.css #可选
-│   │   ├── index.html
-│   │   └── index.js #可选
-│   └── pagebuild.html  #本地开发的pagebuild容器
-└── test
+├── package.json
+└── src
+    ├── app
+    │   ├── index.html
+    │   ├── index.js
+    │   └── index.less
+    └── pagebuild.html
 ```
 
-
-``src/app``
-freelog组件的开发目录，对应当前开发中的web component的html文件。
-
-``pagebuild``
-pagebuild容器，外层框架会对pagebuild容器进行解析，因此这里可自定义pagebuild用于本地开发测试。注意此文件仅用于本地开发使用
-
-
-``package.json``
-packge.json中新增freelog自定义配置。可通过此配置定义资源类型和资源的meta信息
-```json
-{
- "freelogConfig": {
-    "type": "widget",
-    "meta": {}
-  }
-}
+`基于vue.js的组件开发模版生成的目录结构`
+```bash 
+.
+├── README.md
+├── build
+│   ├── build.js
+│   ├── dev-server.js
+│   ├── webpack.base.conf.js
+│   ├── webpack.dev.conf.js
+│   └── webpack.prod.conf.js
+├── config
+│   ├── dev.env.js
+│   ├── index.js
+│   └── prod.env.js
+├── package.json
+└── src
+    ├── app
+    │   ├── index.html
+    │   ├── index.js
+    │   ├── index.less
+    │   ├── pages
+    │   │   ├── app.vue
+    │   │   └── index.vue
+    │   └── router.js
+    └── pagebuild.html
 ```
+
+- `'build/**'`：构建文件，包含webpack构建的配置文件
+
+- `'config/**'`：配置文件
+
+- `'src/app/**'`：组件开发源码
+
+- `'src/app/index.html'`：非必要文件，用于书写组件的html
+
+- `'src/app/index.less'`：非必要文件，用于书写组件的css
+
+- `'src/app/index.js'`：必要文件；组件编译入口文件；用于组件逻辑编写
+
+- `'src/pagebuild.html'`：pagebuild容器，外层框架会对pagebuild容器进行解析，因此这里可自定义pagebuild用于本地开发测试。注意此文件仅用于本地开发使用
+

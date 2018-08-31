@@ -2,7 +2,7 @@
 
 * [介绍](README.md)
 * [快速开始](quickstart.md)
-* [本地开发](core/development.md)
+* [本地开发]
     * [目录结构](core/structure.md)
     * [组件开发](core/development.md)
     * [自定义pagebuild](core/pagebuild.md)
@@ -10,8 +10,13 @@
 * API文档
     * [Query Interface](interface/qi.md)
         * [fetch](interface/qi.md#fetch)
-        * [fetchResource](interface/qi.md#fetchResource)
-        * [fetchPresentable](interface/qi.md#fetchPresentable)
+        * [fetchPresentablesList](interface/qi.md#fetchPresentablesList)
+        * [fetchPresentableInfo](interface/qi.md#fetchPresentableInfo)
+        * [fetchPresentableResourceData](interface/qi.md#fetchPresentableResourceData)
+        * [fetchPresentableResourceInfo](interface/qi.md#fetchPresentableResourceInfo)
+        * [fetchSubResource](interface/qi.md#fetchSubResource)
+        * [requireSubResource](interface/qi.md#requireSubResource)
+        * [resolveResourceUrl](interface/qi.md#resolveResourceUrl)
     * [UI实例](ui/instance.md)
         * [events](ui/instance.md#events)
         * [ExceptionCode](ui/instance.md#ExceptionCode)

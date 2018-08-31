@@ -1,13 +1,12 @@
 # 发布
 
 ## 构建
-对``src/app/index.html``进行构建打包，如果index.html引用本地资源文件(css,js)，会将这些资源内联到index.html中，仅生成一个html。因为最后使用是通过web component的import加载组件。
+对`'src/app/index.js'`进行webpack构建，打包生成一个js文件；最后，pagebuild将通过创建script标签来加载组件。
 
 在项目根目录下执行
 ```sh
 $ npm run build
 ```
-
 
 ## 发布
 在项目根目录下执行

@@ -15,7 +15,7 @@ Freelog官方提供的事件枚举属性；包括如下事件
 
 ## 事件触发函数：window.FreelogApp.trigger(eventName[, options][, callback])
 
-- `事例1: 请求presentable资源数据详情时，errocde不等于0`
+### `事例1: 请求presentable资源数据详情时，errocde不等于0`
 
 ```javascript
 Freeelog.QI.fetchPresentableResourceData('5b5827622d800900294ab2cf')
@@ -31,7 +31,8 @@ Freeelog.QI.fetchPresentableResourceData('5b5827622d800900294ab2cf')
   })
 ```
 
-- `事例2: 唤起资源签约弹窗`
+### `事例2: 唤起资源签约弹窗`
+
 ```javascript
 // 单个资源签约
 FreelogApp.QI.fetchPresentableInfo('5b5827622d800900294ab2cf')
@@ -63,7 +64,8 @@ FreelogApp.QI.fetchPresentablesList()
   })
 ```
 
-- `事例3: 跳转登陆页面 `
+### `事例3: 跳转登陆页面 `
+
 ```javascript
 FreelogApp.trigger(FreelogApp.eventNames['GO_TO_LOGIN'])
 ```

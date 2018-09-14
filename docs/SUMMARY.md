@@ -19,6 +19,7 @@
         * [requireSubResource](interface/qi.md#requireSubResource)
         * [resolveResourceUrl](interface/qi.md#resolveResourceUrl)
     * [Freelog事件](interface/event.md)
+    * [exceptionsCode](interface/exceptionCode.md)
     * [UI实例](ui/instance.md)
         * [events](ui/instance.md#events)
         * [ExceptionCode](ui/instance.md#ExceptionCode)

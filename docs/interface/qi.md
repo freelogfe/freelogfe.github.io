@@ -1,8 +1,8 @@
 # Query Interface
 
-> freelog提供的查询接口，可通过window.QI调用
+> freelog提供的查询接口，可通过window.FreelogApp.QI调用
 
-## `QI.fetch(url[, options])`
+## `FreelogApp.QI.fetch(url[, options])`
 对window.fetch的封装，通过QI.fetch进行的所有请求都将进行`参数组装`、`授权`和`请求头部补充`等一系列处理
 ### Arguments - 可参考[fetch](https://github.com/github/fetch)的参数说明
 - **`url`** String 请求的url
@@ -10,7 +10,7 @@
 
 ---
 
-## `fetchPresentablesList([, params])`
+## `FreelogApp.QI.fetchPresentablesList([, params])`
 获取节点的presentable列表
 ### Arguments 
 - **`params`** Object - 非必填
@@ -84,7 +84,7 @@
 
 ---
 
-## `QI.fetchPresentableInfo(presentableId[, params])`
+## `FreelogApp.QI.fetchPresentableInfo(presentableId[, params])`
 获取单个presentable的详情
 ## Arguments 
 - **`presentableId`** String - **必选** - 展示策略ID
@@ -170,7 +170,7 @@
 
 ---
 
-## `QI.fetchPresentableResourceData(presentableId[, params])`
+## `FreelogApp.QI.fetchPresentableResourceData(presentableId[, params])`
 获取单个节点资源（presentable映射的资源）的数据内容
 ## Arguments 
 - **`presentableId`** String - **必选** - 展示策略ID
@@ -187,7 +187,7 @@
 
 ---
 
-## `QI.fetchPresentableResourceInfo(presentableId[, params])`
+## `FreelogApp.QI.fetchPresentableResourceInfo(presentableId[, params])`
 获取单个节点资源（presentable映射的资源）的详情信息；同时，可通过Response Header获取子资源的ID和token。
 ## Arguments 
 - **`presentableId`** String - **必选** - 展示策略ID
@@ -204,14 +204,14 @@
 
 ---
 
-## `QI.fetchSubResource(resourceId)`
+## `FreelogApp.QI.fetchSubResource(resourceId)`
 获取presentable的子资源的数据内容；同时，可通过Response Header获取子资源的ID和token。
 ## Arguments 
 - **`resourceId`** String - **必选** - 资源ID
 
 ---
 
-## `QI.requireSubResource(resourceId)`
+## `FreelogApp.QI.requireSubResource(resourceId)`
 该方法用于加载js、css资源，将`<Head>`标签插入`<script>`or `<link>`标签
 ## Arguments 
 - **`resourceId`** String - **必选** - 资源ID
@@ -230,7 +230,7 @@ QI.requireSubResource('be8c106c8ee0a85b67b95321353d98af92900a59')
 
 ---
 
-## `QI.resolveResourceUrl(params)`
+## `FreelogApp.QI.resolveResourceUrl(params)`
 - 通过presentableId获取presentable数据资源的url；
 - 通过resourceId[与presentableId]获取子资源的url；
 
@@ -244,21 +244,21 @@ QI.requireSubResource('be8c106c8ee0a85b67b95321353d98af92900a59')
 ## 示例
 ```javascript
 // 获取子资源的url
-QI.resolveResourceUrl({ resourceId: 'be8c106c8ee0a85b67b95321353d98af92900a59' })
+FreelogApp.QI.resolveResourceUrl({ resourceId: 'be8c106c8ee0a85b67b95321353d98af92900a59' })
     .then((url) => {
         // 加载成功
         console.log(url)
     })
 
 // 获取子资源的url
-QI.resolveResourceUrl({ presentableId: '5b6d54a1e321dc002caf2f3c', resourceId: 'be8c106c8ee0a85b67b95321353d98af92900a59' })
+FreelogApp.QI.resolveResourceUrl({ presentableId: '5b6d54a1e321dc002caf2f3c', resourceId: 'be8c106c8ee0a85b67b95321353d98af92900a59' })
     .then((url) => {
         // 加载成功
         console.log(url)
     })
 
 // 获取presentable数据资源的url
-QI.resolveResourceUrl({ presentableId: '5b6d54a1e321dc002caf2f3c' })
+FreelogApp.QI.resolveResourceUrl({ presentableId: '5b6d54a1e321dc002caf2f3c' })
     .then((url) => {
         // 加载成功
         console.log(url)

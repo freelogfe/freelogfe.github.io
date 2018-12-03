@@ -20,9 +20,6 @@
         * [resolveResourceUrl](interface/QI/resolveResourceUrl.md)
     * [Freelog事件](interface/event.md)
     * [ExceptionsCode](interface/exceptionCode.md)
-    * [UI实例](ui/instance.md)
-        * [events](ui/instance.md#events)
-        * [ExceptionCode](ui/instance.md#ExceptionCode)
 * 高级
     * [proxy配置](advanced/proxy.md)
 

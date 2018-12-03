@@ -1,7 +1,7 @@
-# 发布
+# 组件发布
 
 ## 构建
-对`'src/app/index.js'`进行webpack构建，打包生成一个js文件；最后，pagebuild将通过创建script标签来加载组件。
+对`'src/app/index.js'`进行webpack构建，打包生成一个js文件；
 
 在项目根目录下执行
 ```sh

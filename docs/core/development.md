@@ -1,6 +1,9 @@
 # 本地开发
 组件代码开发，基于[web component](https://developers.google.com/web/fundamentals/web-components/?hl=zh-cn)两大重要标准——[Custom Elements V1](https://developers.google.com/web/fundamentals/web-components/customelements?hl=zh-cn)和[Shadow Dom V1](https://developers.google.com/web/fundamentals/web-components/shadowdom?hl=zh-cn)
 
+## 构建项目
+使用npm工具freelog-cli可快速构建Freelog组件开发项目，可参考章节——[快速开始](../quickstart.md)
+
 ## 启动项目
 ```sh
 $ npm run dev

@@ -9,7 +9,7 @@ module.exports = {
   title: 'freelog组件开发',
 
   // Use the "official" theme
-  plugins: ['theme-comscore', 'anchor-navigation-ex', 'fontsettings', 'highlight'],
+  plugins: ['theme-comscore', 'anchors',  'anchor-navigation-ex', 'fontsettings', 'highlight'],
 
   variables: {
     version: pkg.version

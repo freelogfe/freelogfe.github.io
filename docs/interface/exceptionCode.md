@@ -1,4 +1,4 @@
-# exceptionCode 说明
+# ExceptionCode 说明
 即响应的errode，异常码
 
 | 异常码 | 异常描述 | 异常提示 |

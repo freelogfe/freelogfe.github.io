@@ -212,7 +212,7 @@
 ---
 
 ## `FreelogApp.QI.requireSubResource(resourceId)`
-该方法用于加载js、css资源，将`<Head>`标签插入`<script>`or `<link>`标签
+该方法用于加载js、css资源，将在`<head>`标签插入`<script>`or `<link>`标签
 ## Arguments 
 - **`resourceId`** String - **必选** - 资源ID
 

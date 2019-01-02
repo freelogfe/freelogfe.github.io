@@ -4,9 +4,16 @@
   "description": "",
   "main": "book.js",
   "scripts": {
-    "build": "gitbook build"
+    "build": "gitbook build",
+    "dev": "gitbook install && gitbook serve"
   },
-  "keywords": ["doc"],
+  "keywords": [
+    "doc"
+  ],
   "author": "zechengdai",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation": "0.0.1",
+    "gitbook-plugin-ancre-navigation": "^1.0.0"
+  }
 }

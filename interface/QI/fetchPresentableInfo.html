@@ -456,21 +456,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="freelogappqifetchpresentableinfopresentableid-params"><a name="freelogappqifetchpresentableinfopresentableid-params" class="anchor-navigation-ex-anchor" href="#freelogappqifetchpresentableinfopresentableid-params"><i class="fa fa-link" aria-hidden="true"></i></a><a name="freelogappqifetchpresentableinfopresentableid-params" class="plugin-anchor" href="#freelogappqifetchpresentableinfopresentableid-params"><i class="fa fa-link" aria-hidden="true"></i></a><code>FreelogApp.QI.fetchPresentableInfo(presentableId[, params])</code></h2>
+                                <h2 id="freelogappqifetchpresentableinfopresentableid"><a name="freelogappqifetchpresentableinfopresentableid" class="anchor-navigation-ex-anchor" href="#freelogappqifetchpresentableinfopresentableid"><i class="fa fa-link" aria-hidden="true"></i></a><a name="freelogappqifetchpresentableinfopresentableid" class="plugin-anchor" href="#freelogappqifetchpresentableinfopresentableid"><i class="fa fa-link" aria-hidden="true"></i></a><code>FreelogApp.QI.fetchPresentableInfo(presentableId)</code></h2>
 <p>&#x83B7;&#x53D6;&#x5355;&#x4E2A;presentable&#x7684;&#x8BE6;&#x60C5;</p>
 <h2 id="arguments"><a name="arguments" class="anchor-navigation-ex-anchor" href="#arguments"><i class="fa fa-link" aria-hidden="true"></i></a><a name="arguments" class="plugin-anchor" href="#arguments"><i class="fa fa-link" aria-hidden="true"></i></a>Arguments</h2>
 <ul>
-<li><strong><code>presentableId</code></strong> String - <strong>&#x5FC5;&#x9009;</strong> - &#x5C55;&#x793A;&#x7B56;&#x7565;ID</li>
+<li><strong><code>presentableId</code></strong> String - <strong>&#x5FC5;&#x9009;</strong> - &#x8282;&#x70B9;&#x8D44;&#x6E90;ID</li>
 </ul>
 <h3 id="response-&#x5B57;&#x6BB5;&#x8BF4;&#x660E;"><a name="response-&#x5B57;&#x6BB5;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#response-&#x5B57;&#x6BB5;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="response-&#x5B57;&#x6BB5;&#x8BF4;&#x660E;" class="plugin-anchor" href="#response-&#x5B57;&#x6BB5;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>Response &#x5B57;&#x6BB5;&#x8BF4;&#x660E;</h3>
 <ul>
-<li><strong><code>presentableId</code></strong> String - &#x5C55;&#x793A;&#x65B9;&#x6848;ID</li>
-<li><strong><code>presentableName</code></strong> String - &#x5C55;&#x793A;&#x65B9;&#x6848;&#x540D;&#x79F0;</li>
+<li><strong><code>presentableId</code></strong> String - &#x8282;&#x70B9;&#x8D44;&#x6E90;ID</li>
+<li><strong><code>presentableName</code></strong> String - &#x8282;&#x70B9;&#x8D44;&#x6E90;&#x540D;&#x79F0;</li>
 <li><strong><code>resourceId</code></strong> String - &#x65B9;&#x6848;&#x5BF9;&#x5E94;&#x7684;&#x8D44;&#x6E90;ID</li>
 <li><strong><code>userId</code></strong> Number - &#x521B;&#x5EFA;&#x65B9;&#x6848;&#x7684;&#x7528;&#x6237;ID</li>
 <li><strong><code>nodeId</code></strong> Number - &#x8282;&#x70B9;ID</li>
 <li><strong><code>nodeName</code></strong> String - &#x8282;&#x70B9;&#x540D;&#x79F0;</li>
-<li><strong><code>policy</code></strong> Array - &#x5C55;&#x793A;&#x65B9;&#x6848;&#x7B56;&#x7565;&#x7EC4; (&#x793A;&#x4F8B;&#x6570;&#x636E;&#x4EC5;&#x505A;&#x53C2;&#x8003;)</li>
+<li><strong><code>policy</code></strong> Array - &#x8282;&#x70B9;&#x8D44;&#x6E90;&#x7B56;&#x7565;&#x5217;&#x8868; (&#x793A;&#x4F8B;&#x6570;&#x636E;&#x4EC5;&#x505A;&#x53C2;&#x8003;)</li>
 <li><strong><code>createDate</code></strong> String - &#x521B;&#x5EFA;&#x65E5;&#x671F;</li>
 <li><strong><code>userDefinedTags</code></strong> Array - &#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;tags</li>
 <li><strong><code>resourceInfo</code></strong> Object - presentable&#x5BF9;&#x5E94;&#x7684;&#x8D44;&#x6E90;&#x57FA;&#x7840;&#x4FE1;&#x606F;</li>
@@ -481,6 +481,13 @@
 <li><strong><code>status</code></strong> Number - &#x72B6;&#x6001; 1:&#x5408;&#x540C;&#x5DF2;&#x5B8C;&#x5907; 2:&#x5B58;&#x5728;&#x53EF;&#x7528;&#x7B56;&#x7565; &#x603B;&#x72B6;&#x6001;&#x901A;&#x8FC7;|&#x8FD0;&#x7B97;</li>
 </ul>
 <h3 id="&#x793A;&#x4F8B;"><a name="&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x793A;&#x4F8B;" class="plugin-anchor" href="#&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793A;&#x4F8B;</h3>
+<p>&#x8BF7;&#x6C42;&#x793A;&#x4F8B;</p>
+<pre><code class="lang-javascript">FreelogApp.QI.fetchPresentableInfo(<span class="hljs-string">&apos;5c1b5d9331d171002c66e6f4&apos;</span>)
+    .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(res)
+    })
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x793A;&#x4F8B;</p>
 <pre><code class="lang-json">{
     <span class="hljs-string">&quot;ret&quot;</span>: <span class="hljs-number">0</span>,
     <span class="hljs-string">&quot;errcode&quot;</span>: <span class="hljs-number">0</span>,
@@ -583,7 +590,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"fetchPresentableInfo","level":"1.5.2.3","depth":3,"next":{"title":"fetchPresentableResourceData","level":"1.5.2.4","depth":3,"path":"interface/QI/fetchPresentableResourceData.md","ref":"interface/QI/fetchPresentableResourceData.md","articles":[]},"previous":{"title":"fetchPresentablesList","level":"1.5.2.2","depth":3,"path":"interface/QI/fetchPresentablesList.md","ref":"interface/QI/fetchPresentablesList.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","anchors","anchor-navigation-ex","fontsettings","highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"zechengdai <daizech@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0"},"title":"freelog组件开发","gitbook":"*","description":"freelog widget开发文档"},"file":{"path":"interface/QI/fetchPresentableInfo.md","mtime":"2018-11-28T07:58:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-03T06:28:18.914Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"fetchPresentableInfo","level":"1.5.2.3","depth":3,"next":{"title":"fetchPresentableResourceData","level":"1.5.2.4","depth":3,"path":"interface/QI/fetchPresentableResourceData.md","ref":"interface/QI/fetchPresentableResourceData.md","articles":[]},"previous":{"title":"fetchPresentablesList","level":"1.5.2.2","depth":3,"path":"interface/QI/fetchPresentablesList.md","ref":"interface/QI/fetchPresentablesList.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","anchors","anchor-navigation-ex","fontsettings","highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"zechengdai <daizech@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0"},"title":"freelog组件开发","gitbook":"*","description":"freelog widget开发文档"},"file":{"path":"interface/QI/fetchPresentableInfo.md","mtime":"2019-01-02T03:11:10.777Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-02T03:31:54.298Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

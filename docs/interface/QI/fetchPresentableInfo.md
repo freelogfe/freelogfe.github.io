@@ -1,26 +1,34 @@
-## `FreelogApp.QI.fetchPresentableInfo(presentableId)`
+### `FreelogApp.QI.fetchPresentableInfo(presentableId)`
 获取单个presentable的详情
-## Arguments 
-- **`presentableId`** String - **必选** - 节点资源ID
+#### 参数
 
-### Response 字段说明
-- **`presentableId`** String - 节点资源ID
-- **`presentableName`** String - 节点资源名称
-- **`resourceId`** String - 方案对应的资源ID
-- **`userId`** Number - 创建方案的用户ID
-- **`nodeId`** Number - 节点ID
-- **`nodeName`** String - 节点名称
-- **`policy`** Array - 节点资源策略列表 (示例数据仅做参考)
-- **`createDate`** String - 创建日期
-- **`userDefinedTags`** Array - 用户定义的tags
-- **`resourceInfo`** Object - presentable对应的资源基础信息
-- **`**resourceName`** String - 资源名称
-- **`**resourceType`** String - 资源类型
-- **`contracts`** Array - 当前presentable关联的执行合同
-- **`isOnline`** Number - 是否上线 0:否 1:是
-- **`status`** Number - 状态 1:合同已完备 2:存在可用策略 总状态通过|运算
+| 属性 | 类型 | 必填 | 说明 | 
+|--|--|--|--|
+| presentableId | String | 是 | 节点资源ID |
 
-### 示例
+#### Response 字段说明
+
+Object object
+
+|属性|类型|说明| 
+|--|--|--|
+| presentableId | String | 节点资源ID |
+| presentableName|String | 节点资源名称 |
+| resourceId | String | 方案对应的资源ID |
+| userId | Number | 创建方案的用户ID |
+| nodeId | Number | 节点ID |
+| nodeName | String | 节点名称 |
+| policy | Array | 节点资源策略组 (示例数据仅做参考) |
+| createDate | String | 创建日期 |
+| userDefinedTags | Array | 用户定义的tags |
+| resourceInfo | Object | presentable对应的资源基础信息 |
+| -- resourceName | String | 资源名称 |
+| -- resourceType | String | 资源类型 |
+| contracts | Array | 当前presentable关联的执行合同 |
+| isOnline | Number | 是否上线 0:否 1:是 |
+| status | Number | 状态 1:合同已完备 2:存在可用策略 总状态通过或运算获取 |
+
+#### 示例
 
 请求示例
 ```javascript

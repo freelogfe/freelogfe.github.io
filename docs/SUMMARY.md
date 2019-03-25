@@ -7,7 +7,7 @@
     * [自定义pagebuild](core/pagebuild.md)
     * [目录结构](core/structure.md)
 * [发布](core/deployment.md)
-* API文档
+* API
     * [全局变量](interface/global.md)
     * [Query Interface]()
         * [fetch](interface/QI/qi.md)
@@ -18,8 +18,8 @@
         * [fetchSubResource](interface/QI/fetchSubResource.md)
         * [requireSubResource](interface/QI/requireSubResource.md)
         * [resolveResourceUrl](interface/QI/resolveResourceUrl.md)
-    * [Freelog事件](interface/event.md)
-    * [ExceptionsCode](interface/exceptionCode.md)
+* [Freelog事件](interface/event.md)
+* [请求异常码说明](interface/exceptionCode.md)
 * 高级
     * [proxy配置](advanced/proxy.md)
 

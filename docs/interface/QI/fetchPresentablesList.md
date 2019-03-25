@@ -1,33 +1,42 @@
-## `FreelogApp.QI.fetchPresentablesList(params)`
+### `FreelogApp.QI.fetchPresentablesList(params)`
 分页获取节点的presentable列表
 
-### Arguments 
-- **`params`** Object - 可选
-    - **`resourceType`** String - **可选** - 资源类型
-    - **`isOnline`** Number - **可选** - 是否上线(0:下线 1:上线 2:全部) 默认上线
-    - **`tags`** String - **可选** - 用户创建presentable时设置的自定义标签,多个用","分割
-    - **`page`** Number - **可选** - 页码(默认为1)
-    - **`pageSize`** Number - **可选** - 每页数量 (默认为10)
-    - **`keywords`** Number - **可选** - 搜索关键字,目前支持模糊搜索节点资源名称和资源名称
+#### 参数
+Object object
 
-### Response 字段说明
-- **`presentableId`** String - 节点资源ID
-- **`presentableName`** String - 节点资源名称
-- **`resourceId`** String - 方案对应的资源ID
-- **`userId`** Number - 创建方案的用户ID
-- **`nodeId`** Number - 节点ID
-- **`nodeName`** String - 节点名称
-- **`policy`** Array - 节点资源策略组 (示例数据仅做参考)
-- **`createDate`** String - 创建日期
-- **`userDefinedTags`** Array - 用户定义的tags
-- **`resourceInfo`** Object - presentable对应的资源基础信息
-- **`**resourceName`** String - 资源名称
-- **`**resourceType`** String - 资源类型
-- **`contracts`** Array - 当前presentable关联的执行合同
-- **`isOnline`** Number - 是否上线 0:否 1:是
-- **`status`** Number - 状态 1:合同已完备 2:存在可用策略 总状态通过|运算
+| 属性 | 类型 | 必填 | 说明 | 
+|--|--|--|--|
+| resourceType | String | 否 | 资源类型 |
+| isOnline|Number | 否 | 是否上线(0:下线 1:上线 2:全部) 默认上线 |
+| tags | String | 否 | 用户创建presentable时设置的自定义标签,多个用","分割 |
+| page | Number | 否 | 页码(默认为1) |
+| pageSize | Number | 否 | 每页数量 (默认为10) |
+| keywords | Number | 否 | 搜索关键字,目前支持模糊搜索节点资源名称和资源名称 |
 
-### 示例
+#### Response 字段说明
+Object object
+
+|属性|类型|说明| 
+|--|--|--|
+| presentableId | String | 节点资源ID |
+| presentableName|String | 节点资源名称 |
+| resourceId | String | 方案对应的资源ID |
+| userId | Number | 创建方案的用户ID |
+| nodeId | Number | 节点ID |
+| nodeName | String | 节点名称 |
+| policy | Array | 节点资源策略组 (示例数据仅做参考) |
+| createDate | String | 创建日期 |
+| userDefinedTags | Array | 用户定义的tags |
+| resourceInfo | Object | presentable对应的资源基础信息 |
+| -- resourceName | String | 资源名称 |
+| -- resourceType | String | 资源类型 |
+| contracts | Array | 当前presentable关联的执行合同 |
+| isOnline | Number | 是否上线 0:否 1:是 |
+| status | Number | 状态 1:合同已完备 2:存在可用策略 总状态通过或运算获取 |
+
+
+
+#### 示例
 请求示例
 
 ```javascript

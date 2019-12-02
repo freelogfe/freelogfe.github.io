@@ -1,0 +1,774 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>batchGetPresentables · freelog组件开发</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zechengdai <daizech@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pagingGetPresentables.html" />
+    
+    
+    <link rel="prev" href="getPresnetableSubDependData.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../quickstart.html">
+            
+                <a href="../../quickstart.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    本地开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../core/development.html">
+            
+                <a href="../../core/development.html">
+            
+                    
+                    组件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../core/pagebuild.html">
+            
+                <a href="../../core/pagebuild.html">
+            
+                    
+                    自定义pagebuild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../core/structure.html">
+            
+                <a href="../../core/structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../core/deployment.html">
+            
+                <a href="../../core/deployment.html">
+            
+                    
+                    发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../global.html">
+            
+                <a href="../global.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Query Interface
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="qi.html">
+            
+                <a href="qi.html">
+            
+                    
+                    fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="getPresentable.html">
+            
+                <a href="getPresentable.html">
+            
+                    
+                    getPresentable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="getPresentableAuth.html">
+            
+                <a href="getPresentableAuth.html">
+            
+                    
+                    getPresentableAuth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="getPresentableData.html">
+            
+                <a href="getPresentableData.html">
+            
+                    
+                    getPresentableData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="getPresnetableSubDependData.html">
+            
+                <a href="getPresnetableSubDependData.html">
+            
+                    
+                    getPresnetableSubDependData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2.6" data-path="batchGetPresentables.html">
+            
+                <a href="batchGetPresentables.html">
+            
+                    
+                    batchGetPresentables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="pagingGetPresentables.html">
+            
+                <a href="pagingGetPresentables.html">
+            
+                    
+                    pagingGetPresentables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.8" data-path="resolvePresentableDataUrl.html">
+            
+                <a href="resolvePresentableDataUrl.html">
+            
+                    
+                    resolvePresentableDataUrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.9" data-path="resolveSubDependDataUrl.html">
+            
+                <a href="resolveSubDependDataUrl.html">
+            
+                    
+                    resolveSubDependDataUrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.10" data-path="requireSubDepend.html">
+            
+                <a href="requireSubDepend.html">
+            
+                    
+                    requireSubDepend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.11" data-path="getUserInfo.html">
+            
+                <a href="getUserInfo.html">
+            
+                    
+                    getUserInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../event.html">
+            
+                <a href="../event.html">
+            
+                    
+                    Freelog事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../exceptionCode.html">
+            
+                <a href="../exceptionCode.html">
+            
+                    
+                    请求异常码说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    高级
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../advanced/proxy.html">
+            
+                <a href="../../advanced/proxy.html">
+            
+                    
+                    proxy配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >batchGetPresentables</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#freelogappqibatchgetpresentablesparams"><b></b>FreelogApp.QI.batchGetPresentables(params)</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="freelogappqibatchgetpresentablesparams"><a name="freelogappqibatchgetpresentablesparams" class="anchor-navigation-ex-anchor" href="#freelogappqibatchgetpresentablesparams"><i class="fa fa-link" aria-hidden="true"></i></a><a name="freelogappqibatchgetpresentablesparams" class="plugin-anchor" href="#freelogappqibatchgetpresentablesparams"><i class="fa fa-link" aria-hidden="true"></i></a><code>FreelogApp.QI.batchGetPresentables(params)</code></h3>
+<p>&#x6839;&#x636E;&#x53D1;&#x884C; ID &#x6216;&#x53D1;&#x884C;&#x540D;&#x79F0;&#x6279;&#x91CF;&#x67E5;&#x8BE2;&#x8282;&#x70B9; presentable</p>
+<h4 id="&#x53C2;&#x6570;"><a name="&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53C2;&#x6570;" class="plugin-anchor" href="#&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x6570;</h4>
+<p>Object object</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>releaseIds</td>
+<td>Number</td>
+<td>&#x5426;</td>
+<td>&#x53D1;&#x884C; ID&#xFF0C;&#x591A;&#x4E2A; ID &#x4EE5;&#x9017;&#x53F7;&#xFF08;,&#xFF09;&#x9694;&#x5F00;</td>
+</tr>
+<tr>
+<td>releaseNames</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x53D1;&#x884C;&#x540D;&#x79F0;&#xFF0C;&#x591A;&#x4E2A;&#x540D;&#x79F0;&#x4EE5;&#x9017;&#x53F7;&#xFF08;,&#xFF09;&#x9694;&#x5F00;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-&#x5B57;&#x6BB5;--&#x8BF4;&#x660E;"><a name="response-&#x5B57;&#x6BB5;--&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#response-&#x5B57;&#x6BB5;--&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="response-&#x5B57;&#x6BB5;--&#x8BF4;&#x660E;" class="plugin-anchor" href="#response-&#x5B57;&#x6BB5;--&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>Response &#x5B57;&#x6BB5;  &#x8BF4;&#x660E;</h4>
+<p>Object object</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>presentableId</td>
+<td>String</td>
+<td>&#x8282;&#x70B9;&#x8D44;&#x6E90; ID</td>
+</tr>
+<tr>
+<td>presentableName</td>
+<td>String</td>
+<td>&#x8282;&#x70B9;&#x8D44;&#x6E90;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>resourceId</td>
+<td>String</td>
+<td>&#x65B9;&#x6848;&#x5BF9;&#x5E94;&#x7684;&#x8D44;&#x6E90; ID</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>Number</td>
+<td>&#x521B;&#x5EFA;&#x65B9;&#x6848;&#x7684;&#x7528;&#x6237; ID</td>
+</tr>
+<tr>
+<td>nodeId</td>
+<td>Number</td>
+<td>&#x8282;&#x70B9; ID</td>
+</tr>
+<tr>
+<td>nodeName</td>
+<td>String</td>
+<td>&#x8282;&#x70B9;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>policy</td>
+<td>Array</td>
+<td>&#x8282;&#x70B9;&#x8D44;&#x6E90;&#x7B56;&#x7565;&#x7EC4; (&#x793A;&#x4F8B;&#x6570;&#x636E;&#x4EC5;&#x505A;&#x53C2;&#x8003;)</td>
+</tr>
+<tr>
+<td>createDate</td>
+<td>String</td>
+<td>&#x521B;&#x5EFA;&#x65E5;&#x671F;</td>
+</tr>
+<tr>
+<td>userDefinedTags</td>
+<td>Array</td>
+<td>&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684; tags</td>
+</tr>
+<tr>
+<td>contracts</td>
+<td>Array</td>
+<td>&#x5F53;&#x524D; presentable &#x5173;&#x8054;&#x7684;&#x6267;&#x884C;&#x5408;&#x540C;</td>
+</tr>
+<tr>
+<td>isOnline</td>
+<td>Number</td>
+<td>&#x662F;&#x5426;&#x4E0A;&#x7EBF; 0:&#x5426; 1:&#x662F;</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Number</td>
+<td>&#x72B6;&#x6001; 1:&#x5408;&#x540C;&#x5DF2;&#x5B8C;&#x5907; 2:&#x5B58;&#x5728;&#x53EF;&#x7528;&#x7B56;&#x7565; &#x603B;&#x72B6;&#x6001;&#x901A;&#x8FC7;&#x6216;&#x8FD0;&#x7B97;&#x83B7;&#x53D6;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x793A;&#x4F8B;"><a name="&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x793A;&#x4F8B;" class="plugin-anchor" href="#&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793A;&#x4F8B;</h4>
+<p>&#x8BF7;&#x6C42;&#x793A;&#x4F8B;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x6839;&#x636E;&#x53D1;&#x884C;&#x540D;&#x79F0;</span>
+FreelogApp.QI.batchGetPresentables({
+  <span class="hljs-attr">releaseNames</span>: [<span class="hljs-string">&quot;ww-zh/&#x6B4C;&#x66F2;-&#x9648;&#x7EEE;&#x8D1E;-&#x8DDD;&#x79BB;&quot;</span>, <span class="hljs-string">&quot;ww-zh/&#x6B4C;&#x66F2;-&#x90D1;&#x94A7;-&#x7070;&#x59D1;&#x5A18;&quot;</span>].join(<span class="hljs-string">&quot;,&quot;</span>)
+}).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(res);
+});
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#x793A;&#x4F8B;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;ret&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;errcode&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;success&quot;</span>,
+  <span class="hljs-string">&quot;data&quot;</span>: {
+    <span class="hljs-string">&quot;dataList&quot;</span>: [
+      {
+        <span class="hljs-string">&quot;presentableId&quot;</span>: <span class="hljs-string">&quot;9cf16950d6344d08f01fd34b1c66359c&quot;</span>,
+        <span class="hljs-string">&quot;presentableName&quot;</span>: <span class="hljs-string">&quot;&#x9648;&#x7EEE;&#x8D1E;-&#x8DDD;&#x79BB;&quot;</span>,
+        <span class="hljs-string">&quot;previewImages&quot;</span>: [
+          <span class="hljs-string">&quot;https://image.freelog.com/preview/9261f29b-1711-480b-a4f4-fdb9ae05409b.jpg&quot;</span>
+        ],
+        <span class="hljs-string">&quot;intro&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;isOnline&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;resourceType&quot;</span>: <span class="hljs-string">&quot;audio&quot;</span>,
+        <span class="hljs-string">&quot;userDefinedTags&quot;</span>: [<span class="hljs-string">&quot;new-song&quot;</span>],
+        <span class="hljs-string">&quot;originInfo&quot;</span>: {
+          <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.1.0&quot;</span>,
+          <span class="hljs-string">&quot;versions&quot;</span>: [<span class="hljs-string">&quot;0.1.0&quot;</span>],
+          <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;5da81cce66acb1002b8b7dc0&quot;</span>,
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;ww-zh/&#x6B4C;&#x66F2;-&#x9648;&#x7EEE;&#x8D1E;-&#x8DDD;&#x79BB;&quot;</span>,
+          <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;release&quot;</span>
+        },
+        <span class="hljs-string">&quot;resolveReleases&quot;</span>: [],
+        <span class="hljs-string">&quot;nodeId&quot;</span>: <span class="hljs-number">80000050</span>,
+        <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-number">50018</span>,
+        <span class="hljs-string">&quot;updateDate&quot;</span>: <span class="hljs-string">&quot;2019-11-26T09:58:12.850Z&quot;</span>,
+        <span class="hljs-string">&quot;createDate&quot;</span>: <span class="hljs-string">&quot;2019-11-26T09:58:12.850Z&quot;</span>,
+        <span class="hljs-string">&quot;releaseInfo&quot;</span>: {
+          <span class="hljs-string">&quot;releaseId&quot;</span>: <span class="hljs-string">&quot;5da81cce66acb1002b8b7dc0&quot;</span>,
+          <span class="hljs-string">&quot;releaseName&quot;</span>: <span class="hljs-string">&quot;ww-zh/&#x6B4C;&#x66F2;-&#x9648;&#x7EEE;&#x8D1E;-&#x8DDD;&#x79BB;&quot;</span>,
+          <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.1.0&quot;</span>
+        },
+        <span class="hljs-string">&quot;authResult&quot;</span>: {
+          <span class="hljs-string">&quot;isAuth&quot;</span>: <span class="hljs-literal">true</span>,
+          <span class="hljs-string">&quot;authCode&quot;</span>: <span class="hljs-number">201</span>,
+          <span class="hljs-string">&quot;data&quot;</span>: {},
+          <span class="hljs-string">&quot;errors&quot;</span>: [],
+          <span class="hljs-string">&quot;freelog-sub-dependencies&quot;</span>: <span class="hljs-string">&quot;W10=&quot;</span>,
+          <span class="hljs-string">&quot;freelog-entity-nid&quot;</span>: <span class="hljs-string">&quot;9cf16950d634&quot;</span>
+        }
+      },
+      {
+        <span class="hljs-string">&quot;presentableId&quot;</span>: <span class="hljs-string">&quot;b5cdfe9c58890b5f2728369f7b6ba6cd&quot;</span>,
+        <span class="hljs-string">&quot;presentableName&quot;</span>: <span class="hljs-string">&quot;&#x90D1;&#x94A7;-&#x7070;&#x59D1;&#x5A18;&quot;</span>,
+        <span class="hljs-string">&quot;previewImages&quot;</span>: [
+          <span class="hljs-string">&quot;https://image.freelog.com/preview/0cbd6ff4-d381-4f5b-a39b-e62e9612797f.jpg&quot;</span>
+        ],
+        <span class="hljs-string">&quot;intro&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;isOnline&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;resourceType&quot;</span>: <span class="hljs-string">&quot;audio&quot;</span>,
+        <span class="hljs-string">&quot;userDefinedTags&quot;</span>: [<span class="hljs-string">&quot;new-song&quot;</span>],
+        <span class="hljs-string">&quot;originInfo&quot;</span>: {
+          <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.1.0&quot;</span>,
+          <span class="hljs-string">&quot;versions&quot;</span>: [<span class="hljs-string">&quot;0.1.0&quot;</span>],
+          <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;5db0123876e5c3002bdb52f0&quot;</span>,
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;ww-zh/&#x6B4C;&#x66F2;-&#x90D1;&#x94A7;-&#x7070;&#x59D1;&#x5A18;&quot;</span>,
+          <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;release&quot;</span>
+        },
+        <span class="hljs-string">&quot;resolveReleases&quot;</span>: [],
+        <span class="hljs-string">&quot;nodeId&quot;</span>: <span class="hljs-number">80000050</span>,
+        <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-number">50018</span>,
+        <span class="hljs-string">&quot;updateDate&quot;</span>: <span class="hljs-string">&quot;2019-11-26T09:58:12.852Z&quot;</span>,
+        <span class="hljs-string">&quot;createDate&quot;</span>: <span class="hljs-string">&quot;2019-11-26T09:58:12.852Z&quot;</span>,
+        <span class="hljs-string">&quot;releaseInfo&quot;</span>: {
+          <span class="hljs-string">&quot;releaseId&quot;</span>: <span class="hljs-string">&quot;5db0123876e5c3002bdb52f0&quot;</span>,
+          <span class="hljs-string">&quot;releaseName&quot;</span>: <span class="hljs-string">&quot;ww-zh/&#x6B4C;&#x66F2;-&#x90D1;&#x94A7;-&#x7070;&#x59D1;&#x5A18;&quot;</span>,
+          <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.1.0&quot;</span>
+        },
+        <span class="hljs-string">&quot;authResult&quot;</span>: {
+          <span class="hljs-string">&quot;isAuth&quot;</span>: <span class="hljs-literal">true</span>,
+          <span class="hljs-string">&quot;authCode&quot;</span>: <span class="hljs-number">201</span>,
+          <span class="hljs-string">&quot;data&quot;</span>: {},
+          <span class="hljs-string">&quot;errors&quot;</span>: [],
+          <span class="hljs-string">&quot;freelog-sub-dependencies&quot;</span>: <span class="hljs-string">&quot;W10=&quot;</span>,
+          <span class="hljs-string">&quot;freelog-entity-nid&quot;</span>: <span class="hljs-string">&quot;b5cdfe9c5889&quot;</span>
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="getPresnetableSubDependData.html" class="navigation navigation-prev " aria-label="Previous page: getPresnetableSubDependData">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pagingGetPresentables.html" class="navigation navigation-next " aria-label="Next page: pagingGetPresentables">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"batchGetPresentables","level":"1.5.2.6","depth":3,"next":{"title":"pagingGetPresentables","level":"1.5.2.7","depth":3,"path":"interface/QI/pagingGetPresentables.md","ref":"interface/QI/pagingGetPresentables.md","articles":[]},"previous":{"title":"getPresnetableSubDependData","level":"1.5.2.5","depth":3,"path":"interface/QI/getPresnetableSubDependData.md","ref":"interface/QI/getPresnetableSubDependData.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","anchors","anchor-navigation-ex","fontsettings","highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"zechengdai <daizech@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0"},"title":"freelog组件开发","gitbook":"*","description":"freelog widget开发文档"},"file":{"path":"interface/QI/batchGetPresentables.md","mtime":"2019-11-26T10:01:34.879Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-02T06:46:52.441Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
